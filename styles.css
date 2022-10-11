@@ -1,0 +1,160 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --date: rgb(213, 225, 253);
+}
+
+@font-face {
+  font-family: Jakarta-Sans;
+  src: url(/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+  font-weight: 500 800;
+}
+
+/* layout */
+/* position and dimensions */
+/* margin and padding */
+/* box enhancements */
+/* font enhancements */
+/* others */
+
+/*==========================================================
+Normalization
+============================================*/
+body {
+  font-family: Jakarta-Sans;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+div,
+header {
+  box-sizing: border-box;
+}
+
+/* Wrapper
+========================================================*/
+
+.wrapper {
+  margin: 0 auto 0;
+  padding: 1.25rem 1.5rem 0.625rem;
+  max-width: 47.9375rem;
+}
+
+/* Header
+=======================================================*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 1.25rem;
+}
+
+.header__notifications {
+  display: flex;
+}
+
+.header__h1 {
+  margin-right: 0.5rem;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#header__unread_comments {
+  padding: 0 0.625rem 0;
+
+  color: var(--white);
+  background-color: var(--blue);
+
+  border-radius: 0.25rem;
+}
+
+.button__all_read {
+  padding: 0;
+
+  border: none;
+
+  font-weight: 500;
+  color: var(--grayish-blue);
+  background-color: white;
+}
+
+/*Notifications Section
+====================================================*/
+
+.card {
+  display: flex;
+  gap: 1rem;
+
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.625rem;
+  background-color: var(--very-light-grayish-blue);
+}
+
+.card__image {
+  height: 3rem;
+  width: 3rem;
+}
+
+.card__name {
+  font-weight: 800;
+  color: black;
+}
+
+.card__text {
+  color: var(--grayish-blue);
+}
+
+.card__post {
+  margin: 1rem 0;
+
+  color: var(--dark-grayish-blue);
+}
+
+.card__date {
+  color: lightgrey;
+}
+
+.card__priv_msg {
+  padding: 1rem;
+
+  border: 1px solid gray;
+}
+
+.card__group {
+  color: var(--blue);
+}
