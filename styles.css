@@ -153,8 +153,10 @@ header {
   padding: 1rem;
 
   border: 1px solid gray;
+  border-radius: 0.5rem;
 }
 
 .card__group {
+  font-weight: 800;
   color: var(--blue);
 }
