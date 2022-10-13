@@ -1,17 +1,16 @@
-function init(){
-    const cardList=document.querySelectorAll('.card');
-    const cardArray=Array.from(cardList);
+const cardUnreadNodeList = document.querySelectorAll(".card--unread");
+const cardUnread = Array.from(cardUnreadNodeList);
 
-    cardArray.forEach(card) =>
-    card.addEventListener('click',function(event){
-        cardClick(event.target.classList.contains('card--unread'))
-    })
+cardUnread.forEach(function (card) {
+  card.addEventListener("click", function (event) {
+    markAsReaded(event);
+  });
+});
+
+function markAsReaded(event) {
+  let card = event.target;
+  card.classList.remove("card--unread");
+  card
+    .querySelector(":scope .card__dot--unread")
+    .classList.remove("card__dot--unread");
 }
-
-function cardClick(boolean){
-    if(boolean===true){
-
-    }
-}
-
-init()

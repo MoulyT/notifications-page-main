@@ -175,7 +175,12 @@ header {
 }
 
 .card__text {
+  pointer-events: none;
   color: var(--grayish-blue);
+}
+
+.card__text a {
+  pointer-events: initial;
 }
 
 .card__post {
@@ -194,6 +199,8 @@ header {
 
 .card__date {
   margin-bottom: 1rem;
+
+  block-size: fit-content;
 
   color: lightgrey;
 }
