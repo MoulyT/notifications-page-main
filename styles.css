@@ -72,6 +72,15 @@ header {
   max-width: 47.9375rem;
 }
 
+@media screen and (min-width: 767px) {
+  body {
+    background-color: var(--very-light-grayish-blue);
+  }
+  .wrapper {
+    background-color: var(--white);
+  }
+}
+
 /* Header
 =======================================================*/
 
@@ -112,6 +121,14 @@ header {
   background-color: white;
 }
 
+.button__all_read:hover {
+  cursor: pointer;
+}
+
+.button__all_read:active {
+  color: var(--blue);
+}
+
 /*Notifications Section
 ====================================================*/
 
@@ -122,6 +139,9 @@ header {
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.625rem;
+}
+
+.card--unread {
   background-color: var(--very-light-grayish-blue);
 }
 
@@ -130,9 +150,28 @@ header {
   width: 3rem;
 }
 
+.card__image {
+  cursor: pointer;
+}
+
+.card__picture_container {
+  margin-left: auto;
+}
+.card__picture {
+  width: 3rem;
+}
+
 .card__name {
   font-weight: 800;
   color: black;
+}
+
+.card__name:hover {
+  cursor: pointer;
+}
+
+.card__name:active {
+  color: var(--blue);
 }
 
 .card__text {
@@ -145,18 +184,59 @@ header {
   color: var(--dark-grayish-blue);
 }
 
+.card__post:hover {
+  cursor: pointer;
+}
+
+.card__post:active {
+  color: var(--blue);
+}
+
 .card__date {
+  margin-bottom: 1rem;
+
   color: lightgrey;
 }
 
 .card__priv_msg {
+  display: block;
   padding: 1rem;
 
   border: 1px solid gray;
   border-radius: 0.5rem;
+
+  color: inherit;
+}
+
+.card__priv_msg:hover {
+  cursor: pointer;
+}
+.card__priv_msg:active {
+  border: none;
+  background-color: var(--light-grayish-blue-1);
 }
 
 .card__group {
   font-weight: 800;
   color: var(--blue);
+}
+
+.card__group:hover {
+  cursor: pointer;
+}
+
+.card__dot {
+  display: none;
+  height: 0.5rem;
+  width: 0.5rem;
+
+  margin-left: 0.2rem;
+
+  background-color: var(--red);
+
+  border-radius: 50%;
+}
+
+.card__dot--unread {
+  display: inline-block;
 }

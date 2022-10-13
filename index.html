@@ -25,7 +25,7 @@
         <button class="button__all_read">Mark all as read</button>
       </header>
       <section class="section__notifications">
-        <div class="card">
+        <div class="card card--unread">
           <img
             src="/assets/images/avatar-mark-webber.webp"
             alt=""
@@ -36,12 +36,14 @@
               <a href="#" class="card__name">Mark Webber</a> reacted to your
               recent post
               <a href="#" class="card__post">My first tournament today!</a>
+              <span class="card__dot card__dot--unread"></span>
             </p>
+
             <p class="card__date">1m ago</p>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card card--unread">
           <img
             src="/assets/images/avatar-angela-gray.webp"
             alt=""
@@ -50,12 +52,14 @@
           <div class="card__text">
             <p class="card__p">
               <a href="#" class="card__name">Angela Gray</a> followed you
+              <span class="card__dot card__dot--unread"></span>
             </p>
+
             <p class="card__date">5m ago</p>
           </div>
         </div>
 
-        <div class="card">
+        <div class="card card--unread">
           <img
             src="/assets/images/avatar-jacob-thompson.webp"
             alt=""
@@ -66,7 +70,9 @@
               <a href="#" class="card__name">Jacob Thompson</a> has joined your
               group
               <a href="#" class="card__group">Chess Club</a>
+              <span class="card__dot card__dot--unread"></span>
             </p>
+
             <p class="card__date">1 day ago</p>
           </div>
         </div>
@@ -80,14 +86,15 @@
           <div class="card__text">
             <p class="card__p">
               <a href="#" class="card__name">Rizky Hasanuddin</a> sent you a
-              private message
+              private message <span class="card__dot"></span>
             </p>
+
             <p class="card__date">5 days ago</p>
-            <div class="card__priv_msg">
-              Hello, thanks for setting up the Chess Club. I've been a member
+            <a href="#" class="card__priv_msg"
+              >Hello, thanks for setting up the Chess Club. I've been a member
               for a few weeks now and I'm already having lots of fun and
-              improving my game.
-            </div>
+              improving my game.</a
+            >
           </div>
         </div>
 
@@ -100,9 +107,17 @@
           <div class="card__text">
             <p class="card__p">
               <a href="#" class="card__name">Kimberly Smith</a> commented on
-              your picture
+              your picture <span class="card__dot"></span>
             </p>
+
             <p class="card__date">1 week ago</p>
+          </div>
+          <div class="card__picture_container">
+            <img
+              class="card__picture"
+              src="/assets/images/image-chess.webp"
+              alt=""
+            />
           </div>
         </div>
 
@@ -116,8 +131,12 @@
             <p class="card__p">
               <a href="#" class="card__name">Nathan Peterson</a> reacted to your
               recent post
-              <span>5 end-game strategies to increase your win rate</span>
+              <span class="card__post"
+                >5 end-game strategies to increase your win rate</span
+              >
+              <span class="card__dot"></span>
             </p>
+
             <p class="card__date">2 weeks ago</p>
           </div>
         </div>
@@ -132,7 +151,9 @@
             <p class="card__p">
               <a href="#" class="card__name">Anna Kim</a> left the group
               <a href="#" class="card__group">Chess Club</a>
+              <span class="card__dot"></span>
             </p>
+
             <p class="card__date">2 weeks ago</p>
           </div>
         </div>
